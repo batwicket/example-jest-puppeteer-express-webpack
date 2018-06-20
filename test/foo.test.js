@@ -5,7 +5,7 @@ describe('foo', () => {
   test('should return bar', async () => {
     const foo = await page.evaluate(() => {
       console.log('foo');
-      return foo();
+      return foo.default();
     })
     expect(foo).toBe('bar')
   })
